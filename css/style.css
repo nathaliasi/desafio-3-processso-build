@@ -1,0 +1,6 @@
+/*estilo*/
+@import url(geral/geral.css);
+
+/*formato*/
+@import url(formato/cores.css);
+@import url(formato/tipografia.css);
