@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="../dist/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,52 +17,52 @@
 <body>
   <section class="sec-1">
     <h1 class="font-preto">Adicionar um Ponto Turístico</h1>
-    <form action="/" class="form">
+    <form action="/" class="form" id="form">
       <div class="container">
         <div class="div-1">
-          <div id="input-image" class="font-cinza cor-c">
+          <div id="input-image" class="font-cinza cor-c imagem">
             <label for="selectfile">Imagem</label>
-            <input type="file" id="selectfile">
+            <input type="file" id="selectfile" type="image">
           </div>
         </div>
         <div class="div-2">
-          <div id="input-titulo" class="font-cinza cor-c">
+          <div id="input-titulo" class="font-cinza cor-c titulo">
             <input type="text" name="titulo" id="titulo" placeholder="Título">
           </div>
-          <div class="font-cinza cor-c">
-            <textarea name="descricao" id="descricao" rows="5">Descrição</textarea>
+          <div class="font-cinza cor-c" id="descri">
+            <textarea name="descricao" id="descricao" descricao rows="5" placeholder="Descrição"></textarea>
           </div>
-          <button class="cor-b button" type="submit">Adicionar</button>
+          <button id="add" class="cor-b button btnSubmitForm" type="submit">Adicionar</button>
         </div>
       </div>
     </form>
   </section>
-  <section class="sec-1" id="sec-1">
+  <section class="sec-2">
     <h1 class="font-preto">Pontos Turísticos</h1>
-    <div class="container2">
+    <div class="container2 column" id="container2">
       <div class="div-form">
-        <img src="img/imagem-1.png" alt="pão de açucar">
+        <img src="../img/imagem-1.png" alt="pão de açucar">
         <div class="texto">
           <h2>Pão de Açúcar</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam fugiat neque quam dolores ex, quidem beatae.</p>
         </div>
       </div>
       <div class="div-form">
-        <img class="img" src="img/imagem-2.png" alt="Cristo Redentor">
+        <img src="../img/imagem-2.png" alt="Cristo Redentor">
         <div class="texto">
           <h2>Cristo Redentor</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam fugiat neque quam dolores ex, quidem beatae.</p>
         </div>
       </div>
       <div class="div-form">
-        <img src="img/imagem-3.png" alt="Ilha Grande">
+        <img src="../img/imagem-3.png" alt="Ilha Grande">
         <div class="texto ipad">
           <h2>Ilha Grande</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam fugiat neque quam dolores ex, quidem beatae.</p>
         </div>
       </div>
       <div class="div-form">
-        <img src="img/imagem-4.png" alt="Centro Histórico Paraty">
+        <img src="../img/imagem-4.png" alt="Centro Histórico Paraty">
         <div class="texto ipad" id="rodape">
           <h2>Centro Histórico Paraty</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam fugiat neque quam dolores ex, quidem beatae.</p>
@@ -70,6 +70,9 @@
       </div>
     </div>
   </section>
+
+  <script src="../dist/bundle.js"></script>
+  <!--<script src="../src/scripts/script.js"></script> -->
 </body>
 
 </html>
